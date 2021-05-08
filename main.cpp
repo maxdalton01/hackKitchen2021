@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+#include "easter_egg.h"
+
 using namespace std; 
 
 int isRaw(int time) {
@@ -21,11 +23,10 @@ int main()
     // function for determining raw or not
     // need to have it boiled for exactly 8 hours: gordon is tough!
 
-    double userTime;
-    string userName;
-    cout << "Welcome chef! What would you like to be called?";
-    getline(cin, userName);
-    userName = "Chef " + userName;
+    Demon_Ramsey demon_ramsey;
+	int x = demon_ramsey.get_magic_number();
+
+	cout << "My Demon Ramsey magic number is: " << x << endl;
     
     /*
     string model;
