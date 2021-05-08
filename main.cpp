@@ -6,8 +6,28 @@
 
 using namespace std; 
 
+int isRaw(int time) {
+    if (time != 8)
+        return 0; // needs to be perfect
+    else if (time < 0)
+        return 2; // negative time?? what?
+    else
+        return 1; // kudos to you, time was right
+}
+
 int main()
 {
+    
+    // function for determining raw or not
+    // need to have it boiled for exactly 8 hours: gordon is tough!
+
+    double userTime;
+    string userName;
+    cout << "Welcome chef! What would you like to be called?";
+    getline(cin, userName);
+    userName = "Chef " + userName;
+    
+    /*
     string model;
 	string type_of_vehicle;
 	string color;
@@ -30,4 +50,5 @@ int main()
 	getline(cin, leather);
 	cout << "Want Auto-Pilot? ";
 	getline(cin, auto_pilot);
+     */
 }
