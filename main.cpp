@@ -51,6 +51,12 @@ int main()
     string userName_s__p__hot_;
     cout << "Welcome chef! What would you like to be called? " << endl;
     getline(cin, userName_s__p__hot_);
+    if(userName_s__p__hot_ == "Nino") {
+        Demon_Ramsey demon_ramsey;
+        int x = demon_ramsey.get_magic_number();
+        cout << "You have summoned Easter Egg Demon Ramsey" << endl;
+        cout << "My magic number is: " << x << endl;
+    }
     userName_s__p__hot_ = "Chef " + userName_s__p__hot_;
     cout << "Nice to meet you " + userName_s__p__hot_ + "." << endl;
     cout << "Today we will be cooking up an Irish specialty: Corned-Beef Hash." << endl;
