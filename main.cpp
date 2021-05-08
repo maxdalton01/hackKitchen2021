@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+#include "easter_egg.h"
+
 using namespace std; 
 
 // .................
